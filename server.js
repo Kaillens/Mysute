@@ -19,11 +19,11 @@ app.use(function(req,res,next){
 next();
 });
 
-app.use(express.static(__dirname + '/dist/MONSITE'));
+app.use(express.static(__dirname + '/dist/MonSite'));
 
 app.get('/*', function(req,res) {
     
-res.sendFile(path.join(__dirname+'/dist/MONSITE/index.html'));
+res.sendFile(path.join(__dirname+'/dist/MonSite/index.html'));
 });
 
 const article = new mongoose.Schema({
