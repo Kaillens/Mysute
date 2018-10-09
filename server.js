@@ -69,6 +69,6 @@ app.post("/sendmail",function (req, res){
 })
 
 
-app.listen(8012, ()=>{
+app.listen(process.env.PORT ||8012, ()=>{
     console.log('waf waf 8012 waf waf');
 })
