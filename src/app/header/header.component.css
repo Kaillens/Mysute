@@ -16,6 +16,12 @@ header {
     height: 150px;
     width: 150px;
   }
+
+  #PaddingLogo{
+    padding: 5px;
+    height: fit-content;
+    width: fit-content;
+  }
   
   #Contact {
     margin-top: auto;
