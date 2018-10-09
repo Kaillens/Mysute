@@ -13,6 +13,7 @@ app.use(bodyParser.json({limit:'10mb'}));
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(function(req,res,next){
+    res.setHeader( 'Access-Control-Allow-Origin', process.env.PORT);
     res.setHeader( 'Access-Control-Allow-Methods', 'GET, POST, OPTIONS, DELETE');
     res.setHeader( 'Access-Control-Allow-Headers', 'Accept,Accept-Language,Content-Language,Content-Type');
     res.setHeader( 'Access-Control-Expose-Headers', 'Content-Length,Content-Range');
