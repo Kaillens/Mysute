@@ -14,7 +14,7 @@ Month = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Aoû
 
   ngOnInit() {
     const params = new HttpParams().set('Number', this.CurrentArticle);
-    this.http.get('http://localhost:8012/GetArticle', {params})
+    this.http.get(process.env.PORT + '/GetArticle', {params})
     .subscribe((reponse) => {
       let tempMonth = reponse[0].Date.substr(2, 2);
       if (tempMonth[0] === '0') {
@@ -45,7 +45,7 @@ if (side === 'right') {
   }
 }
 const params = new HttpParams().set('Number', this.CurrentArticle);
-this.http.get('http://localhost:8012/GetArticle', {params})
+this.http.get(process.env.PORT + '/GetArticle', {params})
 .subscribe((reponse) => {
   let tempMonth = reponse[0].Date.substr(2, 2);
   if (tempMonth[0] === '0') {
