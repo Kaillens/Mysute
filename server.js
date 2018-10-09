@@ -13,7 +13,7 @@ app.use(bodyParser.json({limit:'10mb'}));
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(function(req,res,next){
-    res.setHeader( 'Access-Control-Allow-Origin', process.env.PORT);
+  res.setHeader( 'Access-Control-Allow-Origin', process.env.PORT);
     res.setHeader( 'Access-Control-Allow-Methods', 'GET, POST, OPTIONS, DELETE');
     res.setHeader( 'Access-Control-Allow-Headers', 'Accept,Accept-Language,Content-Language,Content-Type');
     res.setHeader( 'Access-Control-Expose-Headers', 'Content-Length,Content-Range');
@@ -39,6 +39,7 @@ const article = new mongoose.Schema({
 
 const modele = mongoose.model('Mesarticle', article);
 app.get("/GetArticle", async function (req,res,){
+  console.log('dvds')
     let Origin = parseInt(req.query.Number);
     let ArticleList = await modele.find({}, {'_id':0}).sort({'Date': -1});
     res.json(ArticleList.slice(Origin,Origin+2));

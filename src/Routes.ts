@@ -26,6 +26,10 @@ export const routes: Routes = [
         path: 'Erreur',
         component: ErreurComponent
     },
+    {
+        path: 'About',
+        component: AboutComponent
+    },
 
 
 ];

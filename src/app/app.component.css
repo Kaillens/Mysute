@@ -9,24 +9,10 @@ body {
     min-width:350px;
   }
 
-  #Content{
-margin-right: 10%;
-margin-left: 10%;
-  }
 
 
-  @media only screen and (max-width: 1050px) {
-    #Content{
-      margin-right: 2%;
-      margin-left: 2%;
-        }
-  }
 
   @media only screen and (min-width: 1050px) and (max-width: 1600px) {
-    #Content{
-      margin-right: 4%;
-      margin-left: 4%;
-        }
 
   body {
     font-family: "Calibri";
