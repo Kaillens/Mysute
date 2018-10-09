@@ -19,6 +19,12 @@ app.use(function(req,res,next){
 next();
 });
 
+app.use(express.static(__dirname + '/dist/MONSITE'));
+
+app.get('/*', function(req,res) {
+    
+res.sendFile(path.join(__dirname+'/dist/MONSITE/index.html'));
+});
 
 const article = new mongoose.Schema({
     "titre": String,
