@@ -1,0 +1,63 @@
+body {
+    font-family: "Calibri";
+    font-size: 18px;
+  }
+  
+  #Background {
+    background-color: lightblue;
+    width:100%;
+    min-width:350px;
+  }
+
+  #Content{
+margin-right: 10%;
+margin-left: 10%;
+  }
+
+
+  @media only screen and (max-width: 1050px) {
+    #Content{
+      margin-right: 2%;
+      margin-left: 2%;
+        }
+  }
+
+  @media only screen and (min-width: 1050px) and (max-width: 1600px) {
+    #Content{
+      margin-right: 4%;
+      margin-left: 4%;
+        }
+
+  body {
+    font-family: "Calibri";
+    font-size: 14px;
+  }
+}
+
+
+  @media only screen and (min-width: 768px) and (max-width: 1050px) {
+    #Content{
+      margin-right: 0%;
+      margin-left: 0%;
+        }
+
+  body {
+    font-family: "Calibri";
+    font-size: 12px;
+  }
+  }
+
+
+
+  @media only screen and (max-width: 768px) {
+    #Content{
+      margin-right: 0;
+      margin-left: 0;
+        }
+
+  body {
+    font-family: "Calibri";
+    font-size: 12px;
+ 
+  }
+  }

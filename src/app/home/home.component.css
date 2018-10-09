@@ -1,0 +1,1668 @@
+@media only screen and (min-width: 1600px){
+
+.SectionTitle{
+  font-size: 30px;
+  margin-bottom: 25px;
+  Margin-top: 20px;
+}
+.ContentText{
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 0px;
+  padding-bottom:25px;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.Intro {
+    text-align: center;
+    font-size: 18px;
+  }
+  .Intro .Profil {
+    height: 150px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../../assets/Image/photo.jpg");
+    border-radius: 50%;
+    margin-top: 45px;
+    margin-bottom: 50px;
+  }
+
+  .Intro h1{
+font-size: 46px;
+margin-bottom: 18px;
+  }
+  
+ .Intro p {
+ font-style: italic;  
+ }
+
+  .Description {
+    background-color: lightslategray;
+    margin-right: 20%;
+    margin-left: 20%;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 60px;
+    
+  }
+  
+  .Description h3 {
+    margin-top: 0px;
+    padding-top: 9px;
+    text-align: center;
+  }
+  .Description p {
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: left;
+  }
+  
+  .Skills {
+    position: relative;
+    top: -50px;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    background-color: white;
+    margin-right: 25%;
+    margin-left: 25%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  
+  .Skilltype p {
+  padding: 2px;
+  font-size: 18px;
+  font-style: italic;
+  padding-right: 10%;
+  padding-left: 10%;
+  }
+
+  .Skilltype h4 {
+  font-size : 26px;  
+  }
+  
+  .SkillList ul {
+      list-style-type: none;
+      padding: 0;
+  }
+
+  .SkillList li {
+    margin-bottom: 5px;
+  }
+  
+  .Skills .Morevisibletext{
+  font-weight: bold;
+  color: blue; 
+  font-size: 24px;  
+  }
+  
+  .SkillIcon{
+  height: 50px;
+  width: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 25px;   
+  }
+
+  .SkillOther{
+  padding-left: 10%;
+  padding-right: 10%;  
+  background-color: white;
+  border-radius: 10px;
+  }
+  
+  .Superimposed{
+    position: relative;
+    top:-100px;
+    padding-top: 65px;
+    padding-bottom: 7px;
+  }
+  
+  .Projects{
+  text-align:center;  
+  padding-left: 3%;
+  padding-right: 3%;
+  border-radius: 10px;
+  }
+
+  .Projects h3{
+    margin-top : 0px;
+    padding-top: 0px;
+  }
+  
+  .Games{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+      max-width: 1500px;
+      margin-right: auto;
+      margin-left: auto;
+      
+  }
+  .OneGame{
+    width: 400px;
+  }
+  .GameOverlay{
+    position: relative; 
+    height:250px; 
+    border-radius: 10px;
+    border: 1px solid black ;
+    overflow: hidden;
+  }
+  .GameImage{
+  height:250px;
+  width: 100%; 
+  
+  }
+  
+  .GameTitle{
+    position: absolute;
+    bottom: 0px;
+      display: block;
+      width: 100%;
+      background-color: rgba(211, 211, 211, 0.5);
+      height: fit-content;
+      padding-top: 6%;
+      padding-bottom: 6%;
+      font-weight: bolder;
+      font-size : 24px;
+  }
+
+  .LD{
+   font-weight: bold;
+   font-size: 20px; 
+  }
+  
+.line{
+margin-top: 40px;
+height: 0px;
+width: 100%;
+border: 2px solid black;
+}
+
+  .Articles{
+    position: relative;
+  height:fit-content;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 45px;  
+  border-radius: 10px;
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 100%;
+
+  }
+
+  
+  .ArticleFlexContainer{
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+  }
+  
+  .ArticleCenter{
+   width: 100%;  
+   text-align: center; 
+  }
+  
+  .ArticleArrow{
+      height: 75px;
+      width: 50px;
+      margin-top: auto;
+      margin-bottom: auto;
+  }
+  
+  .TwoArticles{
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      max-width: 1800px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 40px;
+  }
+  
+  .ArticlePreview{
+    border-radius: 15px;
+    border: 1px solid black;
+    overflow: hidden;
+   margin-left: 10px;
+    margin-right: 10px;
+    width: 500px;
+    height: 370px;
+    background-color: lightgrey; 
+  }
+  
+  .ArticleOverlay{
+    position: relative; 
+    height:300px; 
+  }
+  .ArticleMiniature{
+  height: 300px;
+  width: 500px;
+  }
+  
+  .ArticleTitle{
+  position: absolute;
+  bottom: 0px;
+  height: fit-content;
+  font-size: 18px;
+  font-weight: bolder;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  width: 100%;
+  display:block;
+  background-color: rgba(211, 211, 211, 0.5);
+  margin: 0px;
+  }
+  
+  .ArticleDate{
+  position: absolute;
+  top:0;
+  right: 0;
+  height: 8%;
+  padding-top: 2%;
+  width: 40%;
+  display:block;
+  background-color:  rgba(238, 187, 92, 0.733);
+  margin: 0px;
+  }
+  
+  .ArticleDescription{
+  background-color: lightgrey; 
+  margin: 0px; 
+  padding-right: 5%;
+  padding-left: 5%;
+  }
+  
+  
+  .ContactMe {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: fit-content;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .ContactMe a {
+    text-align: center;
+    width: fit-content;
+    display: block;
+    padding: 10px 10px 10px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px;
+      color: #000000;
+      text-decoration: none;
+  }
+  
+  .ContactMe a:hover {
+    background-color: lightgreen;
+  }
+
+  .ContactMe p:first-child {
+   margin-top: 15px; 
+  }
+  
+}
+
+
+
+
+
+
+
+  
+  @media only screen and (min-width: 1050px) and (max-width: 1200px) {
+    .SectionTitle{
+      font-size: 32px;
+      margin-bottom: 25px;
+      Margin-top: 20px;
+    }
+    .ContentText{
+      font-size: 16px;
+      font-style: italic;
+      margin-top: 0px;
+      padding-bottom:25px;
+    }
+    a {
+      color: #000000;
+      text-decoration: none;
+    }
+    
+    .Intro {
+        text-align: center;
+        font-size: 18px;
+      }
+      .Intro .Profil {
+        height: 150px;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url("../../assets/Image/photo.jpg");
+        border-radius: 50%;
+        margin-top: 45px;
+        margin-bottom: 50px;
+      }
+    
+      .Intro h1{
+    font-size: 40px;
+    margin-bottom: 18px;
+      }
+      
+     .Intro p {
+     font-style: italic;  
+     }
+    
+      .Description {
+        background-color: lightslategray;
+        margin-right: 0%;
+        margin-left: 0%;
+        border-radius: 10px;
+        padding-top: 5px;
+        padding-bottom: 60px;
+        
+      }
+      
+      .Description h3 {
+        margin-top: 0px;
+        padding-top: 9px;
+        text-align: center;
+      }
+      .Description p {
+        margin-left: 8%;
+        margin-right: 8%;
+        text-align: left;
+      }
+      
+      .Skills {
+        position: relative;
+        top: -50px;
+        z-index: 10;
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        grid-template-rows: auto auto auto auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+        background-color: white;
+        margin-right: 8%;
+        margin-left: 8%;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 14px;
+      }
+      
+      
+      .Skilltype p {
+      padding: 2px;
+      font-size: 14px;
+      font-style: italic;
+      padding-right: 10%;
+      padding-left: 10%;
+      }
+    
+      .Skilltype h4 {
+      font-size : 16px; 
+      padding-left: 10%;
+      padding-right: 10%;  
+      }
+      
+
+      .SkillList ul {
+          list-style-type: none;
+          padding: 0;
+          padding-left: 10%;
+      padding-right: 10%;  
+      }
+    
+      .SkillList li {
+        margin-bottom: 5px;
+      }
+      
+      .Skills .Morevisibletext{
+      font-weight: bold;
+      color: blue; 
+      font-size: 14px;  
+      }
+      
+      .SkillIcon{
+      height: 50px;
+      width: 50px;
+      padding-right: auto;
+      padding-left: auto;
+      margin-top: 25px;   
+      background-color: white;
+      }
+    
+      .SkillOther{
+      padding-left: 10%;
+      padding-right: 10%;  
+      background-color: white;
+      border-radius: 10px;
+      }
+      
+      .Superimposed{
+        position: relative;
+        top:-100px;
+        padding-top: 65px;
+        padding-bottom: 7px;
+      }
+      
+      .Projects{
+      text-align:center;  
+      padding-left: 3%;
+      padding-right: 3%;
+      border-radius: 10px;
+      }
+    
+      .Projects h3{
+        margin-top : 0px;
+        padding-top: 0px;
+      }
+      
+      .Games{
+          display: flex;
+          justify-content: space-around;
+          margin-top: 20px;
+          margin-right: auto;
+          margin-left: auto;
+          
+      }
+      .OneGame{
+        width: 250px;
+      }
+      .GameOverlay{
+        position: relative; 
+        height:250px; 
+        border-radius: 10px;
+        border: 1px solid black ;
+        overflow: hidden;
+      }
+      .GameImage{
+      height:250px;
+      width: 100%; 
+      
+      }
+      
+      .GameTitle{
+        position: absolute;
+        bottom: 0px;
+          display: block;
+          width: 100%;
+          background-color: rgba(211, 211, 211, 0.5);
+          height: fit-content;
+          padding-top: 6%;
+          padding-bottom: 6%;
+          font-weight: bolder;
+          font-size : 18px;
+      }
+    
+      .LD{
+       font-weight: bold;
+       font-size: 16px; 
+      }
+      
+    .line{
+    margin-top: 40px;
+    height: 0px;
+    width: 100%;
+    border: 2px solid black;
+    }
+    
+      .Articles{
+        position: relative;
+      height:fit-content;
+      padding-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 45px;  
+      border-radius: 10px;
+      padding-left: 2%;
+      padding-right: 2%;
+      width: 100%;
+      max-width: 1200px;
+    
+      }
+    
+      
+      .ArticleFlexContainer{
+          display:flex;
+          justify-content: space-around;
+          width: 100%;
+          margin-right: auto;
+          margin-left: auto;
+      }
+      
+      .ArticleCenter{
+       width: 100%;  
+       text-align: center; 
+      }
+      
+      .ArticleArrow{
+          height: 75px;
+          width: 50px;
+          margin-top: auto;
+          margin-bottom: auto;
+      }
+      
+      .TwoArticles{
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 40px;
+      }
+      
+      .ArticlePreview{
+        border-radius: 15px;
+        border: 1px solid black;
+        overflow: hidden;
+       margin-left: 10px;
+        margin-right: 10px;
+        width: 500px;
+        height: 370px;
+        background-color: lightgrey; 
+      }
+      
+      .ArticleOverlay{
+        position: relative; 
+        height:300px; 
+      }
+      .ArticleMiniature{
+      height: 300px;
+      width: 500px;
+      }
+      
+      .ArticleTitle{
+      position: absolute;
+      bottom: 0px;
+      height: fit-content;
+      font-size: 18px;
+      font-weight: bolder;
+      padding-top: 6%;
+      padding-bottom: 6%;
+      width: 100%;
+      display:block;
+      background-color: rgba(211, 211, 211, 0.5);
+      margin: 0px;
+      }
+      
+      .ArticleDate{
+      position: absolute;
+      top:0;
+      right: 0;
+      height: 8%;
+      padding-top: 2%;
+      width: 40%;
+      display:block;
+      background-color:  rgba(238, 187, 92, 0.733);
+      margin: 0px;
+      }
+      
+      .ArticleDescription{
+      background-color: lightgrey; 
+      margin: 0px; 
+      padding-right: 5%;
+      padding-left: 5%;
+      }
+      
+      
+      .ContactMe {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        height: fit-content;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      
+      .ContactMe a {
+        text-align: center;
+        width: fit-content;
+        display: block;
+        padding: 10px 10px 10px 10px;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: lightcoral;
+        border: 3px solid black;
+        border-radius: 25px;
+          color: #000000;
+          text-decoration: none;
+      }
+      
+      .ContactMe a:hover {
+        background-color: lightgreen;
+      }
+    
+      .ContactMe p:first-child {
+       margin-top: 15px; 
+      }
+  }
+
+
+
+
+
+  @media only screen and (min-width: 768px) and (max-width: 1050px) {
+    .SectionTitle{
+      font-size: 26px;
+      margin-bottom: 25px;
+      Margin-top: 20px;
+    }
+    .ContentText{
+      font-size: 14px;
+      font-style: italic;
+      margin-top: 0px;
+      padding-bottom:25px;
+    }
+    a {
+      color: #000000;
+      text-decoration: none;
+    }
+    
+    .Intro {
+        text-align: center;
+        font-size: 14px;
+      }
+      .Intro .Profil {
+        height: 150px;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url("../../assets/Image/photo.jpg");
+        border-radius: 50%;
+        margin-top: 45px;
+        margin-bottom: 50px;
+      }
+    
+      .Intro h1{
+    font-size: px;
+    margin-bottom: 18px;
+      }
+      
+     .Intro p {
+     font-style: italic;  
+     }
+    
+      .Description {
+        background-color: lightslategray;
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+        border-radius: 10px;
+        padding-top: 5px;
+        padding-bottom: 60px;
+        
+      }
+      
+      .Description h3 {
+        margin-top: 0px;
+        padding-top: 9px;
+        text-align: center;
+      }
+      .Description p {
+        margin-left: 8%;
+        margin-right: 8%;
+        text-align: left;
+      }
+      
+      .Skills {
+        position: relative;
+        top: -50px;
+        z-index: 10;
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        grid-template-rows: auto auto auto auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+        background-color: white;
+        margin-right: 8%;
+        margin-left: 8%;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 14px;
+      }
+      
+      
+      .Skilltype p {
+      padding: 2px;
+      font-size: 14px;
+      font-style: italic;
+      padding-right: 10%;
+      padding-left: 10%;
+      }
+    
+      .Skilltype h4 {
+      font-size : 16px; 
+      padding-left: 10%;
+      padding-right: 10%;  
+      }
+      
+
+      .SkillList ul {
+          list-style-type: none;
+          padding: 0;
+          padding-left: 10%;
+      padding-right: 10%;  
+      }
+    
+      .SkillList li {
+        margin-bottom: 5px;
+      }
+      
+      .Skills .Morevisibletext{
+      font-weight: bold;
+      color: blue; 
+      font-size: 14px;  
+      }
+      
+      .SkillIcon{
+      height: 50px;
+      width: 50px;
+      padding-right: auto;
+      padding-left: auto;
+      margin-top: 25px;   
+      background-color: white;
+      }
+    
+      .SkillOther{
+      padding-left: 10%;
+      padding-right: 10%;  
+      background-color: white;
+      border-radius: 10px;
+      }
+      
+      .Superimposed{
+        position: relative;
+        top:-100px;
+        padding-top: 65px;
+        padding-bottom: 7px;
+      }
+      
+      .Projects{
+      text-align:center;  
+      padding-left: 3%;
+      padding-right: 3%;
+      border-radius: 10px;
+      }
+    
+      .Projects h3{
+        margin-top : 0px;
+        padding-top: 0px;
+      }
+      
+      .Games{
+          display: flex;
+          justify-content: space-around;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 20px;
+          margin-right: auto;
+          margin-left: auto;
+          
+      }
+      .OneGame{
+        width: 400px;
+      }
+      .GameOverlay{
+        position: relative; 
+        height:300px; 
+        border-radius: 10px;
+        border: 1px solid black ;
+        overflow: hidden;
+      }
+      .GameImage{
+      height:250px;
+      width: 100%; 
+      
+      }
+      
+      .GameTitle{
+        position: absolute;
+        bottom: 0px;
+          display: block;
+          width: 100%;
+          background-color: rgba(211, 211, 211, 0.5);
+          height: fit-content;
+          padding-top: 6%;
+          padding-bottom: 6%;
+          font-weight: bolder;
+          font-size : 18px;
+      }
+    
+      .LD{
+       font-weight: bold;
+       font-size: 16px; 
+       margin-bottom: 6
+       36px;
+      }
+      
+    .line{
+    margin-top: 40px;
+    height: 0px;
+    width: 100%;
+    border: 2px solid black;
+    }
+    
+      .Articles{
+        position: relative;
+      height:fit-content;
+      padding-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 45px;  
+      border-radius: 10px;
+      width: 100%;
+    
+      }
+    
+      
+      .ArticleFlexContainer{
+          display:flex;
+          justify-content: space-around;
+          width: 100%;
+          margin-right: auto;
+          margin-left: auto;
+      }
+      
+      .ArticleCenter{
+       width: 100%;  
+       text-align: center; 
+      }
+      
+      .ArticleArrow{
+          height: 60px;
+          width: 40px;
+          margin-top: auto;
+          margin-bottom: auto;
+      }
+      
+      .TwoArticles{
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 40px;
+      }
+      
+      .ArticlePreview{
+        border-radius: 15px;
+        border: 1px solid black;
+        overflow: hidden;
+       margin-left: 10px;
+        margin-right: 10px;
+        width: 250px;
+        height: 230px;
+        background-color: lightgrey; 
+      }
+      
+      .ArticleOverlay{
+        position: relative; 
+        height:230px; 
+      }
+      .ArticleMiniature{
+      height: 180px;
+      width: 250px;
+      }
+      
+      .ArticleTitle{
+      position: absolute;
+      bottom: 0px;
+      font-size: 14px;
+      font-weight: bolder;
+      height: 42px;
+      width: 100%;
+      display:block;
+      background-color: rgba(211, 211, 211, 0.5);
+      margin: 0px;
+      }
+      
+      .ArticleDate{
+      position: absolute;
+      top:0;
+      right: 0;
+      height: 8%;
+      padding-top: 2%;
+      width: 40%;
+      display:block;
+      background-color:  rgba(238, 187, 92, 0.733);
+      margin: 0px;
+      font-size: 12px;
+      }
+      
+      .ArticleDescription{
+      background-color: lightgrey; 
+      margin: 0px; 
+      padding-right: 5%;
+      padding-left: 5%;
+      font-size: 14px;
+      }
+      
+      
+      .ContactMe {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        height: fit-content;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      
+      .ContactMe a {
+        text-align: center;
+        width: fit-content;
+        display: block;
+        padding: 10px 10px 10px 10px;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: lightcoral;
+        border: 3px solid black;
+        border-radius: 25px;
+          color: #000000;
+          text-decoration: none;
+      }
+      
+      .ContactMe a:hover {
+        background-color: lightgreen;
+      }
+    
+      .ContactMe p:first-child {
+       margin-top: 15px; 
+      }
+
+  }
+
+
+
+
+
+  @media only screen and (max-width: 768px) {
+    .SectionTitle{
+      font-size: 26px;
+      margin-bottom: 25px;
+      Margin-top: 20px;
+    }
+    .ContentText{
+      font-size: 14px;
+      font-style: italic;
+      margin-top: 0px;
+      padding-bottom:25px;
+
+    }
+    a {
+      color: #000000;
+      text-decoration: none;
+    }
+    
+    .Intro {
+        text-align: center;
+        font-size: 14px;
+        min-width: 350px;
+      }
+      .Intro .Profil {
+        height: 150px;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url("../../assets/Image/photo.jpg");
+        border-radius: 50%;
+        margin-top: 45px;
+        margin-bottom: 50px;
+      }
+    
+      .Intro h1{
+    font-size: 20px;
+    margin-bottom: 18px;
+      }
+      
+     .Intro p {
+     font-style: italic; 
+     margin-right: 15%;
+     margin-left: 15%;
+      
+     }
+    
+      .Description {
+        background-color: lightslategray;
+        width: 90%;
+        border-radius: 10px;
+        padding-top: 5px;
+        padding-bottom: 60px;
+        min-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .Description h3 {
+        margin-top: 0px;
+        padding-top: 9px;
+        text-align: center;
+      }
+      .Description p {
+        margin-left: 8%;
+        margin-right: 8%;
+        text-align: left;
+      }
+      
+      .Skills {
+        position: relative;
+        top: -50px;
+        z-index: 10;
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        grid-template-rows: auto auto auto auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 12px;
+        min-width: 350px;
+      }
+      
+      
+      .Skilltype p {
+      padding: 2px;
+      font-size: 12px;
+      font-style: italic;
+      padding-right: 10%;
+      padding-left: 10%;
+      }
+    
+      .Skilltype h4 {
+      font-size : 14px; 
+      padding-left: 10%;
+      padding-right: 10%;  
+      }
+      
+
+      .SkillList ul {
+          list-style-type: none;
+          padding: 0;
+          padding-left: 10%;
+      padding-right: 10%;  
+      }
+    
+      .SkillList li {
+        margin-bottom: 5px;
+      }
+      
+      .Skills .Morevisibletext{
+      font-weight: bold;
+      color: blue; 
+      font-size: 14px;  
+      }
+      
+      .SkillIcon{
+      height: 50px;
+      width: 50px;
+      padding-right: auto;
+      padding-left: auto;
+      margin-top: 25px;   
+      background-color: white;
+      }
+    
+      .SkillOther{
+      padding-left: 10%;
+      padding-right: 10%;  
+      background-color: white;
+      border-radius: 10px;
+      }
+      
+      .Superimposed{
+        position: relative;
+        top:-100px;
+        padding-top: 65px;
+        padding-bottom: 7px;
+      }
+      
+      .Projects{
+      text-align:center;  
+      padding-left: 3%;
+      padding-right: 3%;
+      border-radius: 10px;
+      min-width: 350px;
+      }
+    
+      .Projects h3{
+        margin-top : 0px;
+        padding-top: 0px;
+      }
+      
+      .Games{
+          display: flex;
+          justify-content: space-around;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 20px;
+          margin-right: auto;
+          margin-left: auto;
+          
+      }
+      .OneGame{
+        width: 300px;
+      }
+      .GameOverlay{
+        position: relative; 
+        height:300px; 
+        border-radius: 10px;
+        border: 1px solid black ;
+        overflow: hidden;
+      }
+      .GameImage{
+      height:250px;
+      width: 100%; 
+      
+      }
+      
+      .GameTitle{
+        position: absolute;
+        bottom: 0px;
+          display: block;
+          width: 100%;
+          background-color: rgba(211, 211, 211, 0.5);
+          height: fit-content;
+          padding-top: 6%;
+          padding-bottom: 6%;
+          font-weight: bolder;
+          font-size : 18px;
+      }
+    
+      .LD{
+       font-weight: bold;
+       font-size: 16px; 
+       margin-bottom: 6
+       36px;
+      }
+      
+    .line{
+    margin-top: 40px;
+    height: 0px;
+    width: 100%;
+    border: 2px solid black;
+    display:none;
+    }
+
+    
+      .Articles{
+        position: relative;
+      height:fit-content;
+      padding-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 45px;  
+      border-radius: 10px;
+      width: 100%;
+      display:none;
+      }
+    
+      
+      .ArticleFlexContainer{
+          display:flex;
+          justify-content: space-around;
+          width: 100%;
+          margin-right: auto;
+          margin-left: auto;
+      }
+      
+      .ArticleCenter{
+       width: 100%;  
+       text-align: center; 
+      }
+      
+      .ArticleArrow{
+          height: 60px;
+          width: 40px;
+          margin-top: auto;
+          margin-bottom: auto;
+      }
+      
+      .TwoArticles{
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 40px;
+      }
+      
+      .ArticlePreview{
+        border-radius: 15px;
+        border: 1px solid black;
+        overflow: hidden;
+       margin-left: 10px;
+        margin-right: 10px;
+        width: 250px;
+        height: 230px;
+        background-color: lightgrey; 
+      }
+      
+      .ArticleOverlay{
+        position: relative; 
+        height:230px; 
+      }
+      .ArticleMiniature{
+      height: 180px;
+      width: 250px;
+      }
+      
+      .ArticleTitle{
+      position: absolute;
+      bottom: 0px;
+      font-size: 14px;
+      font-weight: bolder;
+      height: 42px;
+      width: 100%;
+      display:block;
+      background-color: rgba(211, 211, 211, 0.5);
+      margin: 0px;
+      }
+      
+      .ArticleDate{
+      position: absolute;
+      top:0;
+      right: 0;
+      height: 8%;
+      padding-top: 2%;
+      width: 40%;
+      display:block;
+      background-color:  rgba(238, 187, 92, 0.733);
+      margin: 0px;
+      font-size: 12px;
+      }
+      
+      .ArticleDescription{
+      background-color: lightgrey; 
+      margin: 0px; 
+      padding-right: 5%;
+      padding-left: 5%;
+      font-size: 14px;
+      }
+      
+      
+      .ContactMe {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        height: fit-content;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      
+      .ContactMe a {
+        text-align: center;
+        width: fit-content;
+        display: block;
+        padding: 10px 10px 10px 10px;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: lightcoral;
+        border: 3px solid black;
+        border-radius: 25px;
+          color: #000000;
+          text-decoration: none;
+      }
+      
+      .ContactMe a:hover {
+        background-color: lightgreen;
+      }
+    
+      .ContactMe p:first-child {
+       margin-top: 15px; 
+      }
+
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .SectionTitle{
+      font-size: 32px;
+      margin-bottom: 25px;
+      Margin-top: 20px;
+    }
+    .ContentText{
+      font-size: 16px;
+      font-style: italic;
+      margin-top: 0px;
+      padding-bottom:25px;
+    }
+    a {
+      color: #000000;
+      text-decoration: none;
+    }
+    
+    .Intro {
+        text-align: center;
+        font-size: 18px;
+      }
+      .Intro .Profil {
+        height: 150px;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url("../../assets/Image/photo.jpg");
+        border-radius: 50%;
+        margin-top: 45px;
+        margin-bottom: 50px;
+      }
+    
+      .Intro h1{
+    font-size: 40px;
+    margin-bottom: 18px;
+      }
+      
+     .Intro p {
+     font-style: italic;  
+     }
+    
+      .Description {
+        background-color: lightslategray;
+        margin-right: 0%;
+        margin-left: 0%;
+        border-radius: 10px;
+        padding-top: 5px;
+        padding-bottom: 60px;
+        
+      }
+      
+      .Description h3 {
+        margin-top: 0px;
+        padding-top: 9px;
+        text-align: center;
+      }
+      .Description p {
+        margin-left: 8%;
+        margin-right: 8%;
+        text-align: left;
+      }
+      
+      .Skills {
+        position: relative;
+        top: -50px;
+        z-index: 10;
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        grid-template-rows: auto auto auto auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+        background-color: white;
+        margin-right: 8%;
+        margin-left: 8%;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 14px;
+      }
+      
+      
+      .Skilltype p {
+      padding: 2px;
+      font-size: 14px;
+      font-style: italic;
+      padding-right: 10%;
+      padding-left: 10%;
+      }
+    
+      .Skilltype h4 {
+      font-size : 16px; 
+      padding-left: 10%;
+      padding-right: 10%;  
+      }
+      
+
+      .SkillList ul {
+          list-style-type: none;
+          padding: 0;
+          padding-left: 10%;
+      padding-right: 10%;  
+      }
+    
+      .SkillList li {
+        margin-bottom: 5px;
+      }
+      
+      .Skills .Morevisibletext{
+      font-weight: bold;
+      color: blue; 
+      font-size: 14px;  
+      }
+      
+      .SkillIcon{
+      height: 50px;
+      width: 50px;
+      padding-right: auto;
+      padding-left: auto;
+      margin-top: 25px;   
+      background-color: white;
+      }
+    
+      .SkillOther{
+      padding-left: 10%;
+      padding-right: 10%;  
+      background-color: white;
+      border-radius: 10px;
+      }
+      
+      .Superimposed{
+        position: relative;
+        top:-100px;
+        padding-top: 65px;
+        padding-bottom: 7px;
+      }
+      
+      .Projects{
+      text-align:center;  
+      padding-left: 3%;
+      padding-right: 3%;
+      border-radius: 10px;
+      }
+    
+      .Projects h3{
+        margin-top : 0px;
+        padding-top: 0px;
+      }
+      
+      .Games{
+          display: flex;
+          justify-content: space-around;
+          margin-top: 20px;
+          margin-right: auto;
+          margin-left: auto;
+          
+      }
+      .OneGame{
+        width: 350px;
+      }
+      .GameOverlay{
+        position: relative; 
+        height:250px; 
+        border-radius: 10px;
+        border: 1px solid black ;
+        overflow: hidden;
+      }
+      .GameImage{
+      height:350px;
+      width: 100%; 
+      
+      }
+      
+      .GameTitle{
+        position: absolute;
+        bottom: 0px;
+          display: block;
+          width: 100%;
+          background-color: rgba(211, 211, 211, 0.5);
+          height: fit-content;
+          padding-top: 6%;
+          padding-bottom: 6%;
+          font-weight: bolder;
+          font-size : 18px;
+      }
+    
+      .LD{
+       font-weight: bold;
+       font-size: 16px; 
+      }
+      
+    .line{
+    margin-top: 40px;
+    height: 0px;
+    width: 100%;
+    border: 2px solid black;
+    }
+    
+      .Articles{
+        position: relative;
+      height:fit-content;
+      padding-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 45px;  
+      border-radius: 10px;
+      padding-left: 2%;
+      padding-right: 2%;
+      width: 100%;
+    
+      }
+    
+      
+      .ArticleFlexContainer{
+          display:flex;
+          justify-content: space-around;
+          width: 100%;
+          margin-right: auto;
+          margin-left: auto;
+      }
+      
+      .ArticleCenter{
+       width: 100%;  
+       text-align: center; 
+      }
+      
+      .ArticleArrow{
+          height: 75px;
+          width: 50px;
+          margin-top: auto;
+          margin-bottom: auto;
+      }
+      
+      .TwoArticles{
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 40px;
+      }
+      
+      .ArticlePreview{
+        border-radius: 15px;
+        border: 1px solid black;
+        overflow: hidden;
+       margin-left: 10px;
+        margin-right: 10px;
+        width: 500px;
+        height: 370px;
+        background-color: lightgrey; 
+      }
+      
+      .ArticleOverlay{
+        position: relative; 
+        height:300px; 
+      }
+      .ArticleMiniature{
+      height: 300px;
+      width: 500px;
+      }
+      
+      .ArticleTitle{
+      position: absolute;
+      bottom: 0px;
+      height: fit-content;
+      font-size: 18px;
+      font-weight: bolder;
+      padding-top: 6%;
+      padding-bottom: 6%;
+      width: 100%;
+      display:block;
+      background-color: rgba(211, 211, 211, 0.5);
+      margin: 0px;
+      }
+      
+      .ArticleDate{
+      position: absolute;
+      top:0;
+      right: 0;
+      height: 8%;
+      padding-top: 2%;
+      width: 40%;
+      display:block;
+      background-color:  rgba(238, 187, 92, 0.733);
+      margin: 0px;
+      }
+      
+      .ArticleDescription{
+      background-color: lightgrey; 
+      margin: 0px; 
+      padding-right: 5%;
+      padding-left: 5%;
+      }
+      
+      
+      .ContactMe {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        height: fit-content;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      
+      .ContactMe a {
+        text-align: center;
+        width: fit-content;
+        display: block;
+        padding: 10px 10px 10px 10px;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: lightcoral;
+        border: 3px solid black;
+        border-radius: 25px;
+          color: #000000;
+          text-decoration: none;
+      }
+      
+      .ContactMe a:hover {
+        background-color: lightgreen;
+      }
+    
+      .ContactMe p:first-child {
+       margin-top: 15px; 
+      }
+  }

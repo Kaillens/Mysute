@@ -1,0 +1,20 @@
+footer{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 183, 199);
+    padding-top: 25px;
+    min-width: 350px;
+   }
+   .RS{
+   display:flex;
+   width: 250px;
+   justify-content: space-around;  
+   }
+   .SocialMedia{
+   height:50px;
+   width :50px;
+   border-radius: 50%;
+   margin-bottom: 20px;  
+   }

@@ -1,0 +1,50 @@
+.mat-card{
+    background-color:lightblue;
+}
+
+
+
+.ContactTitle{
+text-align: center;  
+
+}
+
+label{
+
+font-weight: bold;
+}
+
+mat-form-field{
+    float:right;
+}
+
+.champ{
+display: flex;
+align-items: center; 
+justify-content: space-between;   
+}
+
+mat-card-content{
+    background-color: white; 
+    width: 263px;
+    margin-right: auto;
+    margin-left: auto; 
+    padding-top: 10px;
+    padding-right: 15px;
+padding-left: 15px; 
+margin-right: auto;
+margin-left: auto; 
+border: solid 3px black; 
+border-radius: 5px;
+}
+
+.Button{
+display: flex;
+justify-content: center;
+}
+
+button{
+margin-bottom: 15px;
+border: solid 2px black;
+border-radius: 5px;
+}

@@ -1,0 +1,47 @@
+
+header {
+    height: 175px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 8%;
+    padding-left: 8%;
+    display: flex;
+    justify-content: space-around;
+    min-width: 310px;
+  }
+  
+  .logo {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 150px;
+    width: 150px;
+  }
+  
+  #Contact {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: fit-content;
+  }
+  
+  #Contact a {
+    display: block;
+    padding: 5px;
+    height: fit-content;
+    width: fit-content;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 25px;
+      color: #000000;
+      text-decoration: none;
+      background-color: salmon;
+  }
+  
+  #Contact a:hover {
+    background-color: lightgreen;
+  }
+
+  #Contact a img{
+  width: 140px;
+  height: 140px;  
+  }

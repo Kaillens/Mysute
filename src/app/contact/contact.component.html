@@ -1,0 +1,42 @@
+<mat-card>
+<mat-card-content>
+  <section class="ContactTitle">
+Formulaire de Contact
+  </section>
+  <section>
+    <form [formGroup]="userForm" (submit)="SendMail()">
+      <section class="champ">
+          <label> Nom :</label>
+        <mat-form-field>
+          <input matInput placeholder="name" formControlName="name">
+          <mat-error *ngIf="userForm.controls.name.invalid">{{getErrorMessage('name')}}</mat-error>
+        </mat-form-field>
+      </section>
+      <section  class="champ">
+          <label> Email :</label>
+        <mat-form-field>
+          <input matInput placeholder="email" formControlName="email">
+          <mat-error *ngIf="userForm.controls.email.invalid">{{getErrorMessage('email')}}</mat-error>
+        </mat-form-field>
+      </section>
+      <section  class="champ">
+          <label> Objet :</label>
+        <mat-form-field>
+          <input matInput placeholder="Object" formControlName="Object">
+          <mat-error *ngIf="userForm.controls.Object.invalid">{{getErrorMessage('Object')}}</mat-error>
+        </mat-form-field>
+      </section>
+      <section  class="champ">
+          <label> Message :</label>
+        <mat-form-field>
+          <textarea matInput placeholder="message" formControlName="message"></textarea>
+          <mat-error *ngIf="userForm.controls.message.invalid">{{getErrorMessage('message')}}</mat-error>
+        </mat-form-field>
+      </section>
+      <section class="Button">
+          <button mat-raised-button color='primary' [disabled]="!userForm.valid">Envoyer</button>
+        </section>
+    </form>
+  </section>
+</mat-card-content>
+</mat-card>
