@@ -25,6 +25,7 @@ export class AboutComponent implements OnInit {
     const params = new HttpParams().set('Number', this.CurrentArticle);
     this.http.get(window.location.origin + '/GetArticle', {params})
     .subscribe((reponse) => {
+      console.log(reponse);
       let tempMonth = reponse[0].Article.Date.substr(2, 2);
       if (tempMonth[0] === '0') {
       tempMonth = tempMonth[1];
