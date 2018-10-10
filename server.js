@@ -3,11 +3,9 @@ const path = require("path");
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const nodemailer = require("nodemailer");
-
-var options = { server: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } }, 
-                replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS : 30000 } } };       
-const mongoUri = "mongodb://Kaillens:wafwafmiaou-2@ds223009.mlab.com:23009/arnaudscieur";
-var db = mongoose.connect(mongoUri, options, function( err, response){
+       
+const uri = "mongodb://Kaillens:wafwafmiaou-2@ds223009.mlab.com:23009/arnaudscieur";
+const db = mongoose.connect( uri, { server: { auto_reconnect: true } }, function( err, response){
 if(err){console.log(err);}
 });
 
