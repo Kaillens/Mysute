@@ -13,7 +13,7 @@ app.use(bodyParser.json({limit:'10mb'}));
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(function(req,res,next){
-  res.setHeader( 'Access-Control-Allow-Origin', process.env.PORT);
+  res.setHeader( 'Access-Control-Allow-Origin', 'http://localhost:4200/');
     res.setHeader( 'Access-Control-Allow-Methods', 'GET, POST, OPTIONS, DELETE');
     res.setHeader( 'Access-Control-Allow-Headers', 'Accept,Accept-Language,Content-Language,Content-Type');
     res.setHeader( 'Access-Control-Expose-Headers', 'Content-Length,Content-Range');
@@ -22,9 +22,7 @@ next();
 
 app.use(express.static(__dirname + '/dist/MonSite'));
 
-app.get('/*', async function(req,res) {
-res.sendFile(path.join(__dirname+'/dist/MonSite/index.html'));
-});
+
 
 const article = new mongoose.Schema({
   "_sid":{
@@ -50,6 +48,7 @@ app.get("/GetArticle", async function (req,res,){
     let ArticleList = await modele.find({}, {'_id.$oid':0}).sort({'Article.Date': -1});
     res.json(ArticleList.slice(Origin,Origin+2));
 })
+
 app.post("/sendmail",function (req, res){
     Envoi = req.body;
 
