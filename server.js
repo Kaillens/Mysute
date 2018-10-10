@@ -28,7 +28,7 @@ res.sendFile(path.join(__dirname+'/dist/MonSite/index.html'));
 });
 
 const article = new mongoose.Schema({
-  "id":{
+  "_sid":{
     "$oid": String,
   },
   "Article":{
