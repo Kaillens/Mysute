@@ -5,7 +5,22 @@ const mongoose = require('mongoose');
 const nodemailer = require("nodemailer");
        
 const uri = "mongodb://Kaillens:wafwafmiaou-2@ds223009.mlab.com:23009/arnaudscieur";
-const db = mongoose.connect( uri, { server: { auto_reconnect: true } }, function( err, response){
+var options = {
+  "server" : {
+    "socketOptions" : {
+      "keepAlive" : 300000,
+      "connectTimeoutMS" : 30000
+    }
+  },
+  "replset" : {
+    "socketOptions" : {
+      "keepAlive" : 300000,
+      "connectTimeoutMS" : 30000
+    }
+  }
+}
+
+const db = mongoose.connect( uri, options, function( err, response){
 if(err){console.log(err);}
 });
 
