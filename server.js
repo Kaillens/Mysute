@@ -22,9 +22,16 @@ next();
 
 app.use(express.static(__dirname + '/dist/MonSite'));
 
-app.get('/*', function(req,res) {
+app.get('/*', async function(req,res) {
+if(req.url === '/GetArticle'){
+  let Origin = parseInt(req.query.Number);
+    let ArticleList = await modele.find({}, {'_id.$oid':0}).sort({'Article.Date': -1});
+    res.json(ArticleList.slice(Origin,Origin+2));
+}
+else{
 console.log('get');    
 res.sendFile(path.join(__dirname+'/dist/MonSite/index.html'));
+}
 });
 
 const article = new mongoose.Schema({
@@ -44,6 +51,7 @@ const article = new mongoose.Schema({
 
 const modele = mongoose.model('article', article);
 app.get("/GetArticle", async function (req,res,){
+  console.log(req.url);
   console.log('dvds')
     let Origin = parseInt(req.query.Number);
     let ArticleList = await modele.find({}, {'_id.$oid':0}).sort({'Article.Date': -1});

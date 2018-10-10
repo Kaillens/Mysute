@@ -201,14 +201,14 @@
         <div class="TwoArticles">
           <img class="ArticleArrow" (click)="onArrow('left')" src="../../assets/Image/nextleft.png" />
           <div class="ArticlePreview" *ngFor="let Article of Articles">
-            <a href="{{Article.url}}">
+            <a href="{{Article.Article.url}}">
               <div class="ArticleOverlay">
-                <img class="ArticleMiniature" src="{{Article.miniature}}" />
-                <p class="ArticleTitle">{{Article.titre}}</p>
-                <p class="ArticleDate">{{Article.Date}} </p>
+                <img class="ArticleMiniature" src="{{Article.Article.miniature}}" />
+                <p class="ArticleTitle">{{Article.Article.titre}}</p>
+                <p class="ArticleDate">{{Article.Article.Date}} </p>
               </div>
 
-              <p class="ArticleDescription"> {{Article.description}}</p>
+              <p class="ArticleDescription"> {{Article.Article.description}}</p>
             </a>
 
 
