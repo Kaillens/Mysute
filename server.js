@@ -48,7 +48,9 @@ app.get("/GetArticle", async function (req,res,){
     let ArticleList = await modele.find({}, {'_id.$oid':0}).sort({'Article.Date': -1});
     res.json(ArticleList.slice(Origin,Origin+2));
 })
-
+app.get('/About', async function(req,res) {
+  res.sendFile(path.join(__dirname+'/dist/MonSite/index.html'));
+  });
 app.post("/sendmail",function (req, res){
     Envoi = req.body;
 
