@@ -3,7 +3,7 @@ const path = require("path");
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const nodemailer = require("nodemailer");
-var db = mongoose.connect("mongodb://localhost:27017/test", function( err, response){
+var db = mongoose.connect("mongodb://Kaillens:wafwafmiaou-2@ds223009.mlab.com:23009/arnaudscieur", function( err, response){
 if(err){console.log(err);}
 });
 
@@ -23,11 +23,15 @@ next();
 app.use(express.static(__dirname + '/dist/MonSite'));
 
 app.get('/*', function(req,res) {
-    
+console.log('get');    
 res.sendFile(path.join(__dirname+'/dist/MonSite/index.html'));
 });
 
 const article = new mongoose.Schema({
+  "id":{
+    "$oid": String,
+  },
+  "Article":{
     "titre": String,
     "url": String,
     "site": String,
@@ -35,13 +39,14 @@ const article = new mongoose.Schema({
     "description": String,
     "Date": String,
     "tags": [String]
-})
+  }
+  })
 
-const modele = mongoose.model('Mesarticle', article);
+const modele = mongoose.model('article', article);
 app.get("/GetArticle", async function (req,res,){
   console.log('dvds')
     let Origin = parseInt(req.query.Number);
-    let ArticleList = await modele.find({}, {'_id':0}).sort({'Date': -1});
+    let ArticleList = await modele.find({}, {'_id.$oid':0}).sort({'Article.Date': -1});
     res.json(ArticleList.slice(Origin,Origin+2));
 })
 app.post("/sendmail",function (req, res){
