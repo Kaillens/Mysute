@@ -5,22 +5,10 @@ const mongoose = require('mongoose');
 const nodemailer = require("nodemailer");
        
 const uri = "mongodb://Kaillens:wafwafmiaou-2@ds223009.mlab.com:23009/arnaudscieur";
-var options = {
-  "server" : {
-    "socketOptions" : {
-      "keepAlive" : 300000,
-      "connectTimeoutMS" : 30000
-    }
-  },
-  "replset" : {
-    "socketOptions" : {
-      "keepAlive" : 300000,
-      "connectTimeoutMS" : 30000
-    }
-  }
-}
 
-const db = mongoose.connect( uri, options, function( err, response){
+
+
+const db = mongoose.connect( uri, function( err, response){
 if(err){console.log(err);}
 });
 
@@ -59,6 +47,12 @@ const article = new mongoose.Schema({
 const modele = mongoose.model('article', article);
 app.get("/GetArticle", async function (req,res,){
     let Origin = parseInt(req.query.Number);
+    await modele.create({ Article: { "titre":'buck', "url": 'String',
+    "site": "String",
+    "miniature": "String",
+    "description": "String",
+    "Date": "String",
+    "tags": "[String]"} });
     let ArticleList = await modele.find({}, {'_id.$oid':0}).sort({'Article.Date': -1});
     res.json(ArticleList.slice(Origin,Origin+2));
 })
