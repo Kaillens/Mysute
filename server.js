@@ -43,6 +43,7 @@ const article = new mongoose.Schema({
 
 const modele = mongoose.model('article', article);
 app.get("/GetArticle", async function (req,res,){
+  let Origin = parseInt(req.query.Number);
     let ArticleList = await modele.find({}, {}).sort({'Article.Date': -1});
     res.json(ArticleList.slice(Origin,Origin+2));
 })
