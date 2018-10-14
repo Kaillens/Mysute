@@ -26,7 +26,7 @@ Filter(Filter) {
   console.log(Filter);
   this.SelectedFilter = Filter;
   if (Filter === 'Stages') {
-    const params = new HttpParams().set('Filter', `$or: [{'Article.site': DragOnSlide}, {'Article.site': Planète Chocolat}]`);
+    const params = new HttpParams().set('Filter', `$or: [{'Article.site': 'DragOnSlide'}, {'Article.site': 'Planète Chocolat'}]`);
     this.http.get(window.location.origin + '/FilterArticle', {params})
     .subscribe((reponse) => {
   this.Articles = reponse;
@@ -38,7 +38,7 @@ Filter(Filter) {
       this.Articles = reponse;
         });
   } else {
-    const params = new HttpParams().set('Filter', ` 'Article.site' : ${Filter}`);
+    const params = new HttpParams().set('Filter', ` 'Article.site' : '${Filter}'`);
     this.http.get(window.location.origin + '/FilterArticle', {params})
     .subscribe((reponse) => {
   this.Articles = reponse;
