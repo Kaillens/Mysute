@@ -48,4 +48,6 @@ height: 115px;
    a{
        width: fit-content;
        height: fit-content;
+       color: #000000;
+          text-decoration: none;
    }

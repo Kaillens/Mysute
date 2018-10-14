@@ -88,7 +88,7 @@ border-left: 1px solid black;
 }
     #Intro h1 {
         position: absolute;
-        font-size: 66px;
+        font-size: 56px;
 width: 100%;
         top: 20%;
         color: white;
@@ -427,7 +427,7 @@ border-radius: 5px;
         width: 300px;
       }
       #Intro h1 {
-        font-size: 56px;
+        font-size: 46px;
     }
     }
 
