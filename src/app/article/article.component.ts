@@ -16,7 +16,7 @@ export class ArticleComponent implements OnInit {
   Month = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'];
   ngOnInit() {
     this.SelectedFilter = 'All';
-    this.http.get(window.location.origin + '/GetArticle')
+    this.http.get(window.location.origin + '/GetAllArticle')
     .subscribe((reponse) => {
 this.Articles = reponse;
     });
@@ -33,7 +33,7 @@ Filter(Filter) {
     });
   } else if (Filter === 'All') {
     const params = new HttpParams().set('Filter', '');
-    this.http.get(window.location.origin + '/FilterArticle', {params})
+    this.http.get(window.location.origin + '/GetAllArticle')
     .subscribe((reponse) => {
       this.Articles = reponse;
         });

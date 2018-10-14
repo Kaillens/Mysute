@@ -48,6 +48,11 @@ app.get("/GetArticle", async function (req,res,){
     res.json(ArticleList.slice(Origin,Origin+2));
 })
 
+app.get("/GetAllArticle", async function (req,res,){
+    let ArticleList = await modele.find({}, {}).sort({'Article.Date': -1});
+    res.json(ArticleList);
+})
+
 app.get("/Filter", async function (req,res,){
   let Filter = req.query.Filter;
     let ArticleList = await modele.find({Filter}, {}).sort({'Article.Date': -1});
