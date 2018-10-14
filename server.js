@@ -59,13 +59,17 @@ let receiveFilter = req.query.Filter;
 if(receiveFilter === "Jeuxvideo.com"){
   console.log('ok');
   let ArticleList = await modele.find({'Article.site': 'Jeuxvideo.com'}, {}).sort({'Article.Date': -1});
+  console.log(ArticleList);
+  res.json(ArticleList);
 } else if(receiveFilter === "Eclypsia") {
   let ArticleList = await modele.find({'Article.site': 'Eclypsia'}, {}).sort({'Article.Date': -1});
+  console.log(ArticleList);
+  res.json(ArticleList);
 } else{
   let ArticleList = await modele.find({$or: [{'Article.site': 'DragOnSlide'}, {'Article.site': 'Planète Chocolat'}]}, {}).sort({'Article.Date': -1});
+  console.log(ArticleList);
+  res.json(ArticleList);
   }
-    console.log(ArticleList);
-    res.json(ArticleList);
 });
 
 app.get('/About', async function(req,res) {
