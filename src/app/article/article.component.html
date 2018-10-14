@@ -1,3 +1,47 @@
-<p>
-  article works!
-</p>
+<section id="Intro">
+  <ul class="menu">
+    <li><a href="Home/#Presentation"> Présentation</a> </li>
+    <li><a href="Home/#Skills"> Compétences</a> </li>
+    <li><a href="Home/#Projects"> Projets</a></li>
+    <li><a href="Home/#Articles"> Articles</a></li>
+    <li><a href="Home/#ContactMe"> Contact</a></li>
+  </ul>
+  <h1> Arnaud Scieur <br> Développeur Web <br> Écrivain Multimédia</h1>
+  <div class="IntroText">
+    <p class="Quotes">" Il était d'une espèce unique, <br> trop bizarre pour vivre,  <br> mais trop rare pour mourir."</p>
+    <p class="Author"> Las Vegas Parano</p>
+  </div>
+</section>
+
+<section id="Articles">
+  <div class="ArticleFlexContainer">
+
+
+    <div class="ArticleCenter">
+      <h3 class="SectionTitle">Quelques articles que j'ai écris</h3>
+      <p class="ContentText"> Plusieurs de mes articles écrit pour différent site web</p>
+      <div class="filter">
+       <p class="selector" (click)="Filter('Jeuxvideo.com')" [ngClass]="{selected: SelectedFilter == 'Jeuxvideo.com' }" > Jeuxvidéo.com</p>
+       <p class="selector" (click)="Filter('Eclypsia')" [ngClass]="{selected: SelectedFilter == 'Eclypsia'}" > Eclypsia</p>
+       <p class="selector" (click)="Filter('Stages')" [ngClass]="{selected: SelectedFilter == 'Stages'}" > Stages </p> 
+       <p class="selector" (click)="Filter('All')" [ngClass]="{selected: SelectedFilter == 'All'}" >Voir Tout </p> 
+      </div>
+      <div class="ArticlesList">
+        <div class="ArticlePreview" *ngFor="let Article of Articles">
+          <a href="{{Article.Article.url}}">
+            <div class="ArticleOverlay">
+              <img class="ArticleMiniature" src="{{Article.Article.miniature}}" />
+              <p class="ArticleTitle">{{Article.Article.titre}}</p>
+              <p class="ArticleDate">{{Article.Article.Date}} </p>
+            </div>
+
+            <p class="ArticleDescription"> {{Article.Article.description}}</p>
+          </a>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

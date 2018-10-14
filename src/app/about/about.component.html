@@ -1,12 +1,14 @@
 <div id="main">
-
-  <section class="Intro">
+ <div class="MessageSend"  *ngIf="show" (click)="Hide()">
+<p> Votre message a bien été envoyé !</p>
+ </div>
+  <section id="Intro">
     <ul class="menu">
-      <li><a> Présentation</a> </li>
-      <li><a> Compétences</a> </li>
-      <li><a> Projets</a></li>
-      <li><a> Articles</a></li>
-      <li><a> Contact</a></li>
+      <li><a href="#Presentation"> Présentation</a> </li>
+      <li><a href="#Skills"> Compétences</a> </li>
+      <li><a href="#Projects"> Projets</a></li>
+      <li><a href="#Articles"> Articles</a></li>
+      <li><a href="#ContactMe"> Contact</a></li>
     </ul>
     <h1> Arnaud Scieur <br> Développeur Web <br> Écrivain Multimédia</h1>
     <div class="IntroText">
@@ -16,7 +18,7 @@
   </section>
 
 
-  <section class="Presentation">
+  <section id="Presentation">
     <div class="Profil"></div>
 
 
@@ -24,7 +26,7 @@
 
 
 
-    <section class="Description">
+    <section id="Description">
       <h3 class="SectionTitle">Mon Parcours</h3>
       <p class="ContentText"> À la fin de mes études, ayant des doutes sur le chemin à suivre, je me suis retrouvé à
         m'intéresser de multiples domaines. Fort de ma <b>polyvalence et de ma curiosité</b>, je me suis,
@@ -42,7 +44,7 @@
 
   </section>
 
-  <section class="Skills">
+  <section id="Skills">
     <div class="SkillIconeArea">
       <img class="SkillIcon" src="../../assets/Image/campaign.png" />
     </div>
@@ -85,7 +87,6 @@
         <li>Montage Vidéo/Audio</li>
         <li>User Experience</li>
         <li>Infographie</li>
-        <li>Développement Web</li>
       </ul>
       <div class="line"></div>
     </div>
@@ -153,7 +154,7 @@
     <h3 class="SectionTitle">Quelques projets personnels</h3>
     <p class="ContentText"> Trois jeux réalisés dans le cadre des Ludum Dare Game Jam</p>
 
-    <div class="Games">
+    <div id="Games">
 
       <div class="OneGame">
         <a href="https://0uicmoi.itch.io/light-shaft-ldjam41">
@@ -191,7 +192,7 @@
   <div class="line">
   </div>
 
-  <section class="Articles">
+  <section id="Articles">
     <div class="ArticleFlexContainer">
 
 
@@ -222,7 +223,7 @@
 
   <div class="line"></div>
 
-  <section class="ContactMe" href="/Contact">
+  <section id="ContactMe">
     <h3 class="SectionTitle">Contactez-moi ! </h3>
     <mat-card>
         <mat-card-content>

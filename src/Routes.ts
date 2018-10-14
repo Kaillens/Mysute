@@ -10,26 +10,19 @@ import { ErreurComponent } from './app/erreur/erreur.component';
 
 export const routes: Routes = [
     {
-        path: 'home',
-        component: HomeComponent
+        path: 'Home',
+        component: AboutComponent
     },
     {
         path: '',
-        redirectTo: '/home',
+        redirectTo: '/Home',
         pathMatch: 'full'
     },
     {
-        path: 'Contact',
-        component: ContactComponent
+        path: 'Article',
+        component: ArticleComponent
     },
-    {
-        path: 'Erreur',
-        component: ErreurComponent
-    },
-    {
-        path: 'About',
-        component: AboutComponent
-    },
-
+    { path: '**', redirectTo: '/Home',
+    pathMatch: 'full' }
 
 ];

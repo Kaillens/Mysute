@@ -47,6 +47,13 @@ app.get("/GetArticle", async function (req,res,){
     let ArticleList = await modele.find({}, {}).sort({'Article.Date': -1});
     res.json(ArticleList.slice(Origin,Origin+2));
 })
+
+app.get("/Filter", async function (req,res,){
+  let Filter = req.query.Filter;
+    let ArticleList = await modele.find({Filter}, {}).sort({'Article.Date': -1});
+    res.json(ArticleList);
+})
+
 app.get('/About', async function(req,res) {
   res.sendFile(path.join(__dirname+'/dist/MonSite/index.html'));
   });

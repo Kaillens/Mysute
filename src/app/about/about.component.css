@@ -1,4 +1,5 @@
 
+
 .SectionTitle{
 text-align: center;
 font-size: 36px;    
@@ -17,11 +18,41 @@ text-align: center;
         color: #000000;
         text-decoration: none;
       }
-.Intro{
+
+
+
+.MessageSend{
+position:fixed;
+display:flex;
+justify-content: center;
+align-items: center;
+top:0;
+left: 0;
+width: 100vw;
+height: 100vh;
+    background-color: rgba(0,0,0,0.8); 
+z-index: 30;
+}
+
+.MessageSend p {
+padding: 50px;
+background-color: rgba(158,158,158,1);  
+height: fit-content;
+width: fit-content;   
+font-size: 36px;
+}
+
+
+
+
+
+#Intro{
     position: relative;
-background-image: url("../../assets/Image/Asto.jpg");
+background-image: url("../../assets/Image/PC.jpg");
 width: 100%;
 height: 400px;
+background-size: cover;
+min-width: 300px;
 }
 
 .menu{
@@ -51,36 +82,39 @@ border-left: 1px solid black;
 .menu li a:hover {  
     background-color: rgba(128,128,128,0.8); 
     }
-.Intro{
+#Intro{
     text-align:center;
+    min-width: 300px;
 }
-    .Intro h1 {
+    #Intro h1 {
         position: absolute;
-        font-size: 46px;
-        right: 10%;
+        font-size: 56px;
+width: 100%;
         top: 20%;
         color: white;
         font-style: italic;
     }
 
-.Intro .IntroText{
+#Intro .IntroText{
+    display: none;
 position: absolute;
 top: 30%;
-left: 15%;
+left: 25%;
 width: 300px;
 font-size: 20px;
+color: black;
 }
 
-.Intro .Quotes{
+#Intro .Quotes{
     font-style: italic;
 }
 
-.Intro .Author {
+#Intro .Author {
 
 text-align: right;   
 }
 
-      .Presentation .Profil {
+      #Presentation .Profil {
         height: 200px;
         width: 200px;
         margin-left: auto;
@@ -91,19 +125,20 @@ text-align: right;
         margin-bottom: 45px;
       }
 
-      .Presentation p {
+      #Presentation p {
         font-style: italic;  
         text-align: center;
         }   
 
-.Description{
+#Description{
 width: 70%;
 margin-right:auto;
-margin-left: auto;    
+margin-left: auto;   
+min-width: 300px; 
 }
 
 
-.Skills {
+#Skills {
     position: relative;
     z-index: 10;
     display: grid;
@@ -116,9 +151,10 @@ margin-left: auto;
     font-size: 20px;
     margin-right: auto;
     margin-left: auto;
+    min-width: 300px;
   }
 
-  .Skills .line{
+  #Skills .line{
     margin-right: auto;
     margin-left: auto;
      width: 60%; 
@@ -154,7 +190,7 @@ margin-left: auto;
     margin-bottom: 5px;
   }
   
-  .Skills .Morevisibletext{
+  #Skills .Morevisibletext{
   font-weight: bold;
   color: blue; 
   font-size: 24px;  
@@ -177,18 +213,19 @@ margin-left: auto;
   background-color: white;
   }
 
-  .Projects{
+  #Projects{
     text-align:center;  
     padding-left: 3%;
     padding-right: 3%;
     border-radius: 10px;
+    min-width: 300px;
     }
   
-    .Projects h3{
+    #Projects h3{
       padding-top: 0px;
     }
     
-    .Games{
+    #Games{
         display: flex;
         justify-content: space-around;
         margin-top: 20px;
@@ -199,6 +236,7 @@ margin-left: auto;
     }
     .OneGame{
       width: 400px;
+      text-align: center;
     }
     .GameOverlay{
       position: relative; 
@@ -224,6 +262,7 @@ margin-left: auto;
         padding-bottom: 6%;
         font-weight: bolder;
         font-size : 24px;
+        
     }
   
     .LD{
@@ -236,7 +275,8 @@ margin-left: auto;
   width: 100%;
   }
 
-  .Articles{
+  #Articles{
+    min-width: 300px;
     position: relative;
   height:fit-content;
   padding-bottom: 20px;
@@ -336,7 +376,8 @@ margin-left: auto;
 
 
 
-.ContactTitle{
+#ContactTitle{
+    min-width: 300px;
 text-align: center;  
 
 }
@@ -380,3 +421,65 @@ margin-bottom: 15px;
 border: solid 2px black;
 border-radius: 5px;
 }
+
+@media only screen and (min-width: 1000px) and (max-width: 1300px) {
+    .OneGame{
+        width: 300px;
+      }
+    }
+
+
+
+
+    @media only screen and (min-width: 500px) and (max-width: 1000px) {
+        #Games{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .Skilltype h4 {
+            font-size : 20px;
+            }
+            #Skills p {
+             font-size: 12px;   
+            }
+            #Skills li {
+                font-size: 12px;   
+               }
+            #Skills .Morevisibletext{
+                font-size: 16px;
+            }
+    
+        }
+
+        
+
+        @media only screen and (max-width: 500px) {
+            #Games{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .OneGame{
+                width: 300px;
+              }
+
+              .Skilltype h4 {
+                font-size : 18px;
+                }
+                #Skills p {
+                 font-size: 10px;   
+                }
+                #Skills li {
+                    font-size: 10px;   
+                   }
+                #Skills .Morevisibletext{
+                    font-size: 14px;
+                }
+
+
+
+            }

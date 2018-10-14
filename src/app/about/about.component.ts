@@ -11,6 +11,7 @@ export class AboutComponent implements OnInit {
   userForm: FormGroup;
   CurrentArticle = '0';
   Articles: any;
+show = false;
   Month = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'];
 
   constructor(private router: Router, private http: HttpClient) { }
@@ -22,24 +23,7 @@ export class AboutComponent implements OnInit {
       Object: new FormControl(null, [Validators.required]),
       message: new FormControl(null, [Validators.required]),
     });
-    const params = new HttpParams().set('Number', this.CurrentArticle);
-    this.http.get(window.location.origin + '/GetArticle', {params})
-    .subscribe((reponse) => {
-      console.log(reponse);
-      let tempMonth = reponse[0].Article.Date.substr(2, 2);
-      if (tempMonth[0] === '0') {
-      tempMonth = tempMonth[1];
-      }
-      // tslint:disable-next-line:max-line-length
-      reponse[0].Date = reponse[0].Article.Date.substr(4, 2) + ' ' + this.Month[Number(tempMonth) - 1]  + ' 20' + reponse[0].Article.Date.substr(0, 2);
-      tempMonth = reponse[1].Article.Date.substr(2, 2);
-      if (tempMonth[1] === '0') {
-      tempMonth = tempMonth[1];
-      }
-      // tslint:disable-next-line:max-line-length
-      reponse[1].Date = reponse[1].Article.Date.substr(4, 2) + ' ' + this.Month[Number(tempMonth) - 1]  + ' 20' + reponse[1].Article.Date.substr(0, 2);
-this.Articles = reponse;
-    });
+
   }
   getErrorMessage(field: string): string {
     const errors = {
@@ -59,6 +43,7 @@ this.Articles = reponse;
     };
 console.log('ready to send');
     this.http.post(window.location.origin + '/sendmail', Data).subscribe((result) => console.log(result));
+    this.show = false;
     }
 
     onArrow(side: string) {
@@ -95,4 +80,7 @@ console.log('ready to send');
       });
       }
 
+      Hide() {
+       this.show = false;
+      }
 }
