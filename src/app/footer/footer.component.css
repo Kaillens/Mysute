@@ -44,3 +44,8 @@ height: 115px;
        margin-left: auto;
        margin-right: auto;
    }
+
+   a{
+       width: fit-content;
+       height: fit-content;
+   }
