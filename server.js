@@ -57,6 +57,10 @@ app.get("/Filter", async function (req,res,){
 app.get('/About', async function(req,res) {
   res.sendFile(path.join(__dirname+'/dist/MonSite/index.html'));
   });
+
+  app.get('/Article', async function(req,res) {
+    res.sendFile(path.join(__dirname+'/dist/MonSite/index.html'));
+    });
 app.post("/sendmail",function (req, res){
     Envoi = req.body;
 
