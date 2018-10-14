@@ -75,7 +75,7 @@ text-align: right;
   margin-top: 45px;  
   border-radius: 10px;
   width: 100%;
-
+  min-width: 300px;
   }
   
   .ArticleCenter{
@@ -104,7 +104,7 @@ text-align: right;
     overflow: hidden;
    margin-left: 10px;
     margin-right: 10px;
-    width: 500px;
+    width: 400px;
     height: 370px;
     background-color: lightgrey; 
   }
@@ -115,7 +115,7 @@ text-align: right;
   }
   .ArticleMiniature{
   height: 300px;
-  width: 500px;
+  width: 400px;
   }
   
   .ArticleTitle{
@@ -189,3 +189,64 @@ text-align: right;
   .selected{
     background-color:rgba(248, 182, 130, 0.8); 
   }
+
+  @media only screen and (min-width: 1300px) and (max-width: 1700px) {
+    .ArticlesList{
+      display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto auto auto;
+    grid-column-gap: 4px;
+    grid-row-gap: 0px;
+  }
+    }
+
+    @media only screen and (min-width: 1000px) and (max-width: 1300px) {
+      .ArticlesList{
+        display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto auto auto auto auto;
+      grid-column-gap: 4px;
+      grid-row-gap: 0px;
+    }
+    .ArticlePreview{
+      width: 300px;
+    }
+
+    .ArticleMiniature{
+    width: 300px;
+    }
+      }
+
+      @media only screen and (min-width: 650px) and (max-width: 1000px) {
+        .ArticlesList{
+          display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-column-gap: 4px;
+        grid-row-gap: 0px;
+      }
+      .ArticlePreview{
+        width: 300px;
+      }
+  
+      .ArticleMiniature{
+      width: 300px;
+      }
+        }
+
+        @media only screen and (max-width: 650px) {
+          .ArticlesList{
+            display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+          grid-column-gap: 4px;
+          grid-row-gap: 0px;
+        }
+        .ArticlePreview{
+          width: 300px;
+        }
+    
+        .ArticleMiniature{
+        width: 300px;
+        }
+          }

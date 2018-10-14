@@ -23,13 +23,20 @@ this.Articles = reponse;
   }
 
 Filter(Filter) {
-  console.log(Filter);
   this.SelectedFilter = Filter;
+  if (Filter === 'All') {
+    const params = new HttpParams().set('Filter', Filter);
+    this.http.get(window.location.origin + '/GetAllArticle').subscribe((reponse) => {
+      this.Articles = reponse;
+        });
+  } else {
+  console.log(Filter);
     const params = new HttpParams().set('Filter', Filter);
     this.http.get(window.location.origin + '/FilterArticle', {params})
     .subscribe((reponse) => {
   this.Articles = reponse;
     });
+  }
 
 
 }
