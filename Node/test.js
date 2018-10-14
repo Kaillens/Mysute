@@ -32,9 +32,9 @@ const article = new mongoose.Schema({
 })
 
 const modele = mongoose.model('article', article);
-let ArticleList = modele.find({'Article.site': 'Eclypsia'}, {}).sort({'Article.Date': -1})
+let ArticleList = modele.find({$or: [{'Article.site': 'DragOnSlide'}, {'Article.site': 'Planète Chocolat'}]}, {}).sort({'Article.Date': -1})
 .then((Article) => {
-    console.log(modele.find({'Article.site': 'Eclypsia'}, {}).sort({'Article.Date': -1}));
+    console.log(Article);
 });
     
 ;
