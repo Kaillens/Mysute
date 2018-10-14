@@ -34,7 +34,7 @@ const article = new mongoose.Schema({
 const modele = mongoose.model('article', article);
 let ArticleList = modele.find({'Article.site': 'Eclypsia'}, {}).sort({'Article.Date': -1})
 .then((Article) => {
-    console.log(Article);
+    console.log(modele.find({'Article.site': 'Eclypsia'}, {}).sort({'Article.Date': -1}));
 });
     
 ;
