@@ -76,6 +76,10 @@ app.get('/About', async function(req,res) {
   res.sendFile(path.join(__dirname+'/dist/MonSite/index.html'));
 });
 
+app.get('/Home', async function(req,res) {
+  res.sendFile(path.join(__dirname+'/dist/MonSite/index.html'));
+});
+
   app.get('/Article', async function(req,res) {
     res.sendFile(path.join(__dirname+'/dist/MonSite/index.html'));
     });
