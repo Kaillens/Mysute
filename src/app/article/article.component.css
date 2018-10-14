@@ -95,15 +95,15 @@ text-align: right;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto auto auto;
     grid-column-gap: 4px;
-    grid-row-gap: 0px;
+    grid-row-gap: 10px;
   }
   
   .ArticlePreview{
     border-radius: 15px;
     border: 1px solid black;
     overflow: hidden;
-   margin-left: 10px;
-    margin-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
     width: 400px;
     height: 370px;
     background-color: lightgrey; 
@@ -200,7 +200,24 @@ text-align: right;
   }
     }
 
-    @media only screen and (min-width: 1000px) and (max-width: 1300px) {
+    @media only screen and (min-width: 1200px) and (max-width: 1300px) {
+      .ArticlesList{
+        display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto auto auto auto auto;
+      grid-column-gap: 4px;
+      grid-row-gap: 0px;
+    }
+    .ArticlePreview{
+      width: 350px;
+    }
+
+    .ArticleMiniature{
+    width: 350px;
+    }
+      }
+
+    @media only screen and (min-width: 1000px) and (max-width: 1200px) {
       .ArticlesList{
         display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -217,7 +234,28 @@ text-align: right;
     }
       }
 
-      @media only screen and (min-width: 650px) and (max-width: 1000px) {
+      #Intro h1 {
+        font-size: 46px;
+    }
+
+      @media only screen and (min-width: 800px) and (max-width: 1000px) {
+        .ArticlesList{
+          display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-column-gap: 4px;
+        grid-row-gap: 0px;
+      }
+      .ArticlePreview{
+        width: 350px;
+      }
+  
+      .ArticleMiniature{
+      width: 350px;
+      }
+        }
+
+      @media only screen and (min-width: 650px) and (max-width: 800px) {
         .ArticlesList{
           display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -249,4 +287,9 @@ text-align: right;
         .ArticleMiniature{
         width: 300px;
         }
+
+        #Intro h1 {
+          font-size: 36px;
+      }
+
           }
