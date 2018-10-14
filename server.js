@@ -55,15 +55,22 @@ app.get("/GetAllArticle", async function (req,res,){
 
 app.get("/FilterArticle", async function (req,res,){
   console.log(req.query.Filter);
-  let Filter = req.query.Filter;
-    let ArticleList = await modele.find({Filter}, {}).sort({'Article.Date': -1});
+let receiveFilter = req.query.Filter;
+if(receiveFilter === "Jeuxvideo.com"){
+  console.log('ok');
+  let ArticleList = await modele.find({'Article.site': 'Jeuxvideo.com'}, {}).sort({'Article.Date': -1});
+} else if(receiveFilter === "Eclypsia") {
+  let ArticleList = await modele.find({'Article.site': 'Eclypsia'}, {}).sort({'Article.Date': -1});
+} else{
+  let ArticleList = await modele.find({$or: [{'Article.site': 'DragOnSlide'}, {'Article.site': 'Planète Chocolat'}]}, {}).sort({'Article.Date': -1});
+  }
     console.log(ArticleList);
     res.json(ArticleList);
-})
+});
 
 app.get('/About', async function(req,res) {
   res.sendFile(path.join(__dirname+'/dist/MonSite/index.html'));
-  });
+});
 
   app.get('/Article', async function(req,res) {
     res.sendFile(path.join(__dirname+'/dist/MonSite/index.html'));

@@ -25,26 +25,12 @@ this.Articles = reponse;
 Filter(Filter) {
   console.log(Filter);
   this.SelectedFilter = Filter;
-  if (Filter === 'Stages') {
-    const params = new HttpParams().set('Filter', `$or: [{'Article.site': 'DragOnSlide'}, {'Article.site': 'Planète Chocolat'}]`);
-    this.http.get(window.location.origin + '/FilterArticle', {params})
-    .subscribe((reponse) => {
-  this.Articles = reponse;
-    });
-  } else if (Filter === 'All') {
-    const params = new HttpParams().set('Filter', '');
-    this.http.get(window.location.origin + '/GetAllArticle')
-    .subscribe((reponse) => {
-      this.Articles = reponse;
-        });
-  } else {
-    const params = new HttpParams().set('Filter', ` 'Article.site' : '${Filter}'`);
+    const params = new HttpParams().set('Filter', Filter);
     this.http.get(window.location.origin + '/FilterArticle', {params})
     .subscribe((reponse) => {
   this.Articles = reponse;
     });
 
 
-}
 }
 }
