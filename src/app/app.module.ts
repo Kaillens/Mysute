@@ -11,11 +11,8 @@ import { MatListModule, MatCardModule, MatInputModule, MatSelectModule } from '@
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { ProjectComponent } from './project/project.component';
 import { ArticleComponent } from './article/article.component';
 import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
-import { ErreurComponent } from './erreur/erreur.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -26,11 +23,8 @@ import { routes } from '../Routes';
   declarations: [
     AppComponent,
     HomeComponent,
-    ProjectComponent,
     ArticleComponent,
     AboutComponent,
-    ContactComponent,
-    ErreurComponent,
     HeaderComponent,
     FooterComponent,
     SidebarComponent
