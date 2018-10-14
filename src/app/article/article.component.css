@@ -199,6 +199,9 @@ text-align: right;
     grid-row-gap: 0px;
   }
     }
+    #Intro h1 {
+      font-size: 56px;
+  }
 
     @media only screen and (min-width: 1200px) and (max-width: 1300px) {
       .ArticlesList{
