@@ -53,9 +53,11 @@ app.get("/GetAllArticle", async function (req,res,){
     res.json(ArticleList);
 })
 
-app.get("/Filter", async function (req,res,){
+app.get("/FilterArticle", async function (req,res,){
+  console.log(req.query.Filter);
   let Filter = req.query.Filter;
     let ArticleList = await modele.find({Filter}, {}).sort({'Article.Date': -1});
+    console.log(ArticleList);
     res.json(ArticleList);
 })
 
