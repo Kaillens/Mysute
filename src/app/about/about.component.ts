@@ -17,6 +17,7 @@ show = false;
   constructor(private router: Router, private http: HttpClient) { }
 
   ngOnInit() {
+    alert('Attention, le Design de ce site est encore en travail');
     this.userForm = new FormGroup({
       name: new FormControl(null, [Validators.required]),
       email: new FormControl(null, [Validators.required, Validators.email]),
