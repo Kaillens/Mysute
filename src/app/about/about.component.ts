@@ -34,16 +34,15 @@ show = false;
         tempMonth = tempMonth[1];
         }
         // tslint:disable-next-line:max-line-length
-        reponse[0].Date = reponse[0].Article.Date.substr(4, 2) + ' ' + this.Month[Number(tempMonth) - 1]  + ' 20' + reponse[0].Article.Date.substr(0, 2);
+        reponse[0].Article.Date = reponse[0].Article.Date.substr(4, 2) + ' ' + this.Month[Number(tempMonth) - 1]  + ' 20' + reponse[0].Article.Date.substr(0, 2);
         tempMonth = reponse[1].Article.Date.substr(2, 2);
         if (tempMonth[1] === '0') {
         tempMonth = tempMonth[1];
         }
         // tslint:disable-next-line:max-line-length
-        reponse[1].Date = reponse[1].Article.Date.substr(4, 2) + ' ' + this.Month[Number(tempMonth) - 1]  + ' 20' + reponse[1].Article.Date.substr(0, 2);
-        
+        reponse[1].Article.Date = reponse[1].Article.Date.substr(4, 2) + ' ' + this.Month[Number(tempMonth) - 1]  + ' 20' + reponse[1].Article.Date.substr(0, 2);
+
       this.Articles = reponse;
-      console.log(this.Articles);
       });
 
   }
@@ -91,13 +90,13 @@ console.log('ready to send');
         tempMonth = tempMonth[1];
         }
         // tslint:disable-next-line:max-line-length
-        reponse[0].Date = reponse[0].Article.Date.substr(4, 2) + ' ' + this.Month[Number(tempMonth) - 1]  + ' 20' + reponse[0].Article.Date.substr(0, 2);
+        reponse[0].Article.Date = reponse[0].Article.Date.substr(4, 2) + ' ' + this.Month[Number(tempMonth) - 1]  + ' 20' + reponse[0].Article.Date.substr(0, 2);
         tempMonth = reponse[1].Article.Date.substr(2, 2);
         if (tempMonth[1] === '0') {
         tempMonth = tempMonth[1];
         }
         // tslint:disable-next-line:max-line-length
-        reponse[1].Date = reponse[1].Article.Date.substr(4, 2) + ' ' + this.Month[Number(tempMonth) - 1]  + ' 20' + reponse[1].Article.Date.substr(0, 2);
+        reponse[1].Article.Date = reponse[1].Article.Date.substr(4, 2) + ' ' + this.Month[Number(tempMonth) - 1]  + ' 20' + reponse[1].Article.Date.substr(0, 2);
       this.Articles = reponse;
       });
       }
