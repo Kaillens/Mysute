@@ -19,8 +19,9 @@ export class ArticleComponent implements OnInit {
     this.http.get(window.location.origin + '/GetAllArticle')
     .subscribe((reponse) => {
 this.Articles = reponse;
-});
 console.log(this.Articles);
+});
+
     }
 
 Filter(Filter) {
