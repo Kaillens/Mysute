@@ -19,12 +19,17 @@ export class ArticleComponent implements OnInit {
     this.http.get(window.location.origin + '/GetAllArticle')
     .subscribe((reponse) => {
 this.Articles = reponse;
-console.log(this.Articles);
-this.Articles.map((element) => {
-console.log(element);
 });
-    });
+
+this.Articles.map((element) => {
+ let tempMonth = element.Article.Date.substr(2, 2);
+  if (tempMonth[1] === '0') {
+  tempMonth = tempMonth[1];
   }
+  // tslint:disable-next-line:max-line-length
+  element.Article.Date = element.Article.Date.substr(4, 2) + ' ' + this.Month[Number(tempMonth) - 1]  + ' 20' + element.Article.Date.substr(0, 2);
+});
+    }
 
 Filter(Filter) {
   this.SelectedFilter = Filter;
@@ -41,7 +46,14 @@ Filter(Filter) {
   this.Articles = reponse;
     });
   }
-
+  this.Articles.map((element) => {
+    let tempMonth = element.Article.Date.substr(2, 2);
+     if (tempMonth[1] === '0') {
+     tempMonth = tempMonth[1];
+     }
+     // tslint:disable-next-line:max-line-length
+     element.Article.Date = element.Article.Date.substr(4, 2) + ' ' + this.Month[Number(tempMonth) - 1]  + ' 20' + element.Article.Date.substr(0, 2);
+   });
 
 }
 }
