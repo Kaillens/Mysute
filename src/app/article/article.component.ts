@@ -20,6 +20,9 @@ export class ArticleComponent implements OnInit {
     .subscribe((reponse) => {
 this.Articles = reponse;
 console.log(this.Articles);
+this.Articles.map((element) => {
+console.log(element);
+});
     });
   }
 
