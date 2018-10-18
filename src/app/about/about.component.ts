@@ -41,8 +41,9 @@ show = false;
         }
         // tslint:disable-next-line:max-line-length
         reponse[1].Date = reponse[1].Article.Date.substr(4, 2) + ' ' + this.Month[Number(tempMonth) - 1]  + ' 20' + reponse[1].Article.Date.substr(0, 2);
-        console.log(reponse[1].Date);
+        
       this.Articles = reponse;
+      console.log(this.Articles);
       });
 
   }
