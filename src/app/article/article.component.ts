@@ -20,16 +20,7 @@ export class ArticleComponent implements OnInit {
     .subscribe((reponse) => {
 this.Articles = reponse;
 });
-this.Articles.map((element) => {
-  let tempMonth = element.Article.Date.substr(2, 2);
-   if (tempMonth[1] === '0') {
-   tempMonth = tempMonth[1];
-   }
-   // tslint:disable-next-line:max-line-length
-   console.log(element.Article.Date.substr(2, 2));
-   element.Article.Date = element.Article.Date.substr(4, 2) + ' ' + this.Month[Number(tempMonth) - 1]  + ' 20' + element.Article.Date.substr(0, 2);
- });
-
+console.log(this.Articles);
     }
 
 Filter(Filter) {
