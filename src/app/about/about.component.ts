@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import {Router} from '@angular/router';
 import { HttpClient, HttpHeaders, HttpResponse, HttpParams } from '@angular/common/http';
+
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
+
 export class AboutComponent implements OnInit {
   userForm: FormGroup;
   CurrentArticle = '0';
@@ -30,9 +32,11 @@ show = false;
         let tempMonth = reponse[0].Article.Date.substr(2, 2);
         if (tempMonth[0] === '0') {
         tempMonth = tempMonth[1];
+        console.log(tempMonth);
         }
         // tslint:disable-next-line:max-line-length
         reponse[0].Date = reponse[0].Article.Date.substr(4, 2) + ' ' + this.Month[Number(tempMonth) - 1]  + ' 20' + reponse[0].Article.Date.substr(0, 2);
+        console.log(reponse[0].Article.Date.substr(4, 2) + ' ' + this.Month[Number(tempMonth) - 1]  + ' 20' + reponse[0].Article.Date.substr(0, 2));
         tempMonth = reponse[1].Article.Date.substr(2, 2);
         if (tempMonth[1] === '0') {
         tempMonth = tempMonth[1];
@@ -61,7 +65,7 @@ show = false;
     };
 console.log('ready to send');
     this.http.post(window.location.origin + '/sendmail', Data).subscribe((result) => console.log(result));
-    this.show = false;
+    this.show = true;
     }
 
     onArrow(side: string) {

@@ -7,7 +7,6 @@ const nodemailer = require("nodemailer");
 const uri = "mongodb://Kaillens:wafwafmiaou-2@ds223009.mlab.com:23009/arnaudscieur";
 
 
-
 const db = mongoose.connect( uri, function( err, response){
 if(err){console.log(err);}
 });
